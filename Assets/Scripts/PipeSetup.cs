@@ -1,4 +1,14 @@
-﻿using System.Collections;
+﻿/************************************************************************
+** Author: James Tuttle
+** Date: 01/27/2017
+** ----------------------------------
+**
+** Purpose: Pipe setup
+**
+**************************************************************************/
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

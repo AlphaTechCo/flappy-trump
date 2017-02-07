@@ -1,4 +1,14 @@
-﻿using UnityEngine;
+﻿/************************************************************************
+** Author: James Tuttle
+** Date: 022/02/2017
+** ----------------------------------
+**
+** Purpose: Player Controller
+**
+**************************************************************************/
+
+
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using System;
@@ -31,13 +41,6 @@ public Text scoreText;
 			}
 			Flap();
 		}
-		// High Score
-		// scoreText.text = score.ToString();
-		// int temp = PlayerPrefs.GetInt("HighScore");
-		// if(Convert.ToInt32(score) > temp) {
-		// 	PlayerPrefs.SetInt("HighScore", (Convert.ToInt32(score)));
-		// }
-
 	}
 
 	void FixedUpdate() {
@@ -58,8 +61,16 @@ public Text scoreText;
 		}
 		if(other.tag == "ScoreZone") {
 			playerScore++;
+			// >>>> SCORE INCREMENTS - ADD HIGHSCORE UI UPDATE <<<<<
+			int temp = PlayerPrefs.GetInt("HighScore");
+			if(score > temp) { // <-- error one comparing text to int I DID NOT SEE THAT
+							   //          ISSUE ON THE SNAKE VIDEO ????????
+				PlayerPrefs.SetInt("HighScore", score);
+			}
 		}
 	}
+
+
 
 
 	void OnCollisionEnter2D(Collision2D other) {

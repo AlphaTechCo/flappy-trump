@@ -1,4 +1,14 @@
-﻿using System.Collections;
+﻿/************************************************************************
+** Author: James Tuttle
+** Date: 01/26/2017
+** ----------------------------------
+**
+** Purpose: Ground
+**
+**************************************************************************/
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

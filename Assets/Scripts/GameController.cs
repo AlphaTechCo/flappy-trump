@@ -1,4 +1,14 @@
-﻿using UnityEngine;
+﻿/************************************************************************
+** Author: James Tuttle
+** Date: 02/01/2017
+** ----------------------------------
+**
+** Purpose: Game controller
+**
+**************************************************************************/
+
+
+using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour {
