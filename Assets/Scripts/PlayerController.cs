@@ -67,11 +67,11 @@ public Text scoreText;
 			// 				   //          ISSUE ON THE SNAKE VIDEO ????????
 			// 	PlayerPrefs.SetInt("HighScore", score);
 			// }
+
 		}
 	}
-
-
-
+//
+//
 
 	void OnCollisionEnter2D(Collision2D other) {
 		if(other.transform.tag == "DeathZone") {
